@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "jquery": "^3.7.1",
+    "pagepiling-js-version-kostyast": "^2.0.5",
+    "scrollreveal": "^4.0.9"
+  }
+}

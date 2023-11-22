@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta Tags -->
+    <!-- Primary Meta Tags -->
+    <title>Chan Hein Kyaw - Portfolio</title>
+    <meta name="title" content="Chan Hein Kyaw - Portfolio" />
+    <link rel="icon" href="/assets/img/kochan.png" />
+    <meta name="description" content="chan hein kyaw portfolio website" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/" />
+    <meta property="og:title" content="Chan Hein Kyaw - Portfolio" />
+    <meta
+      property="og:description"
+      content="chan hein kyaw portfolio website"
+    />
+    <meta property="og:image" content="/assets/img/thumbnail.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://github.com/" />
+    <meta property="twitter:title" content="Chan Hein Kyaw - Portfolio" />
+    <meta
+      property="twitter:description"
+      content="chan hein kyaw portfolio website"
+    />
+    <meta property="twitter:image" content="/assets/img/thumbnail.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <!-- Dark Mode URL Bar -->
+    <meta name="theme-color" content="dark:bg-slate-900" />
+
+    <!-- Meta Tags -->
+    <style>
+      * {
+        font-family: "Quicksand", sans-serif;
+      }
+      .loading {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: #0f172a;
+        z-index: 22;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/pagepiling-js-version-kostyast/dist/jquery.pagepiling.min.css"
+    />
+  </head>
+  <body class="dark:bg-slate-900">
+    <div class="loading">
+      <div role="status">
+        <div role="status">
+          <svg
+            aria-hidden="true"
+            class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-400 fill-emerald-600"
+            viewBox="0 0 100 101"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+              fill="currentColor"
+            />
+            <path
+              d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+              fill="currentFill"
+            />
+          </svg>
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="lg:hidden duration-500 flex-col dark:bg-slate-800 -left-full dark:text-slate-300 absolute top-0 z-50 min-h-screen w-[60%] flex justify-center leading-10 items-center bg-slate-300"
+      id="menu"
+    >
+      <div
+        class="absolute text-center top-0 right-0 border-2 border-emerald-400 rounded-full w-12 h-12 mt-3 mr-3"
+        id="hideMenu"
+      >
+        <i class="fa fa-solid fa-xmark"></i>
+      </div>
+      <ul class="px-7 my-14 space-y-6 dark:text-slate-300">
+        <li>
+          ‌<a data-menuanchor="home" href="#home" class="active">
+            <i class="fa-solid fa-house-chimney w-6 text-center"></i>
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a data-menuanchor="about_me" href="#about_me">
+            <i class="fa-solid fa-info w-6 text-center"></i>
+            About Me
+          </a>
+        </li>
+        <li>
+          <a data-menuanchor="my_project" href="#my_project">
+            <i class="fa-solid fa-blog w-6 text-center"></i>
+            My Projects
+          </a>
+        </li>
+        <li>
+          <a data-menuanchor="contact_me" href="#contact_me">
+            <i class="fas fa-map-marked-alt w-6 text-center"></i>
+            Contact Me
+          </a>
+        </li>
+      </ul>
+      <div class="flex items-center justify-center scale-50 md:scale-100">
+        <button
+          id="dark-switch"
+          onclick="toggleTheme()"
+          class="shadow w-[72px] flex items-center transition duration-200 rounded-full m-5 bg-slate-800 dark:bg-slate-100 p-1 border border-emerald-400 hover:bg-slate-500"
+        >
+          <div
+            id="dark-switch-icon"
+            class="bg-slate-50 w-8 h-8 rounded-full transform transition duration-200 flex justify-center items-center"
+          >
+            <i class="fa-regular fa-sun"></i>
+          </div>
+          <h6
+            id="dark-text"
+            class="text-slate-100 dark:text-slate-900 translate-x-1"
+          >
+            FF
+          </h6>
+        </button>
+      </div>
+
+      <div class="space-x-2 text-center dark:text-slate-300">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-github"></i>
+      </div>
+    </div>
+    <nav
+      class="flex fixed z-40 w-full mb-5 border-b-2 border-b-emerald-200 shadow-inner lg:hidden justify-between items-center bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-300 p-4 md:px-10 md:py-5"
+    >
+      <p class="font-bold text-emerald-400">Chan Hein Kyaw</p>
+      <i class="fa-solid fa-bars text-emerald-400" id="showMenu"></i>
+    </nav>
+
+    <div class="flex">
+      <div
+        class="flex-auto w-[20%] h-screen border-r border-gray-200 shadow hidden lg:block"
+      >
+        <div
+          class="flex justify-center mt-16 after:content-[''] after:absolute after:right-0 after:bottom-0 after:rounded-b-[5.5rem] after:bg-emerald-400 after:-z-10 after:top-0 after:w-[16rem] after:h-[9.5rem] after:left-0"
+        >
+          <img
+            src="/assets/img/chk.jpg"
+            alt="CHK"
+            class="headline w-24 rounded-full border-2 border-white"
+          />
+        </div>
+        <h1
+          class="headline uppercase font-bold mt-5 text-center tracking-widest dark:text-slate-300"
+        >
+          Chan Hein Kyaw
+        </h1>
+        <ul
+          id="myMenu"
+          class="flex-col px-7 my-14 space-y-6 dark:text-slate-300"
+        >
+          <li class="headline">
+            ‌<a data-menuanchor="home" href="#home" class="active">
+              <i class="fa-solid fa-house-chimney w-6 text-center"></i>
+              Home
+            </a>
+          </li>
+
+          <li class="headline">
+            <a data-menuanchor="about_me" href="#about_me">
+              <i class="fa-solid fa-info w-6 text-center"></i>
+              About Me
+            </a>
+          </li>
+          <li class="headline">
+            <a data-menuanchor="my_project" href="#my_project">
+              <i class="fa-solid fa-blog w-6 text-center"></i>
+              My Projects
+            </a>
+          </li>
+          <li class="headline">
+            <a data-menuanchor="contact_me" href="#contact_me">
+              <i class="fas fa-map-marked-alt w-6 text-center"></i>
+              Contact Me
+            </a>
+          </li>
+        </ul>
+        <!-- Dark Mode -->
+        <div
+          class="flex items-center justify-center scale-50 md:scale-100 headline"
+        >
+          <button
+            id="dark-switch"
+            onclick="toggleTheme()"
+            class="shadow w-[72px] flex items-center transition duration-200 rounded-full m-5 bg-slate-800 dark:bg-slate-100 p-1 border border-emerald-400 hover:bg-slate-500"
+          >
+            <div
+              id="dark-switch-icon"
+              class="bg-slate-50 w-8 h-8 rounded-full transform transition duration-200 flex justify-center items-center"
+            >
+              <i class="fa-regular fa-sun"></i>
+            </div>
+            <h6
+              id="dark-text"
+              class="text-slate-100 dark:text-slate-900 translate-x-1"
+            >
+              FF
+            </h6>
+          </button>
+        </div>
+
+        <div class="space-x-2 text-center dark:text-slate-300 headline">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+      <div class="flex-auto w-[80%]" id="pagepiling">
+        <section id="home" class="section home pp-scrollable absolute">
+          <div
+            class="flex flex-col lg:flex-row sm:pp-section items-center h-screen px-4 pt-20 md:pt-[15rem] lg:pt-0 lg:px-12 bg-white dark:bg-slate-900 dark:text-slate-300"
+          >
+            <div class="w-full headline mb-5">
+              <div>
+                <h6 class="font-medium">Hello, I am</h6>
+                <h1 class="text-4xl font-bold my-4">Chan Hein Kyaw</h1>
+                <p class="font-medium md:text-lg lg:text-md">
+                  I am passionate Programming
+                </p>
+                <p class="my-4 font-light md:text-lg lg:text-md">
+                  I design and develop services for customers of all sizes,
+                  specializing in creating stylish, modern websites, web
+                  services and online stores.
+                </p>
+                <button
+                  id="cm-button"
+                  class="w-36 h-9 bg-emerald-400 text-white border border-emerald-400 rounded-md box-shadow dark:dark-box-shadow hover:bg-white hover:text-emerald-400 transition duration-700 ease-in-out"
+                >
+                  Download CV
+                </button>
+              </div>
+            </div>
+            <div class="flex w-full justify-center headline md:mt-28 lg:mt-0">
+              <img
+                src="/assets/img/chk.jpg"
+                alt="CHK"
+                class="md:w-6/12 lg:w-72 rounded-full border-8 border-emerald-400"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="about_me" class="section about_me pp-scrollable">
+          <div
+            class="flex flex-col lg:flex-row items-center lg:h-screen pt-20 lg:pt-0 px-4 lg:px-12 bg-white dark:bg-slate-900 dark:text-slate-300"
+          >
+            <div class="w-full">
+              <div class="md:flex justify-center">
+                <img
+                  src="/assets/img/kochan.png"
+                  alt="Ko Chan"
+                  class="rounded-lg"
+                />
+              </div>
+            </div>
+            <div class="flex-col w-full justify-center my-5 lg:my-0">
+              <h6 class="font-thin text-4xl">About Me</h6>
+              <p class="text-2xl font-medium my-5">
+                I'm a Freelancer Web Developer with 2 years of experience.
+              </p>
+              <p class="mt-5 text-xs">
+                Ubuntu Advantage is the professional support package from the
+                experts at Canonical. Get 24x7 support with access to engineers
+                with first-hand experience of your issues. It includes
+                Landscape, the systems management tool, for monitoring,
+                managing, patching, and compliance reporting on all your Ubuntu
+                desktops. Learn more about Ubuntu for enterprises ›
+              </p>
+              <div class="flex space-x-20 my-6">
+                <div class="flex w-20 items-center">
+                  <p class="text-5xl font-bold">5K</p>
+                  <p class="font-thin text-sm">Project Completed</p>
+                </div>
+                <div class="flex w-20 items-center">
+                  <p class="text-5xl font-bold">3K</p>
+                  <p class="font-thin text-sm">Satisfied Clients</p>
+                </div>
+              </div>
+
+              <div class="space-x-5">
+                <button
+                  id="cm-button"
+                  class="w-36 h-9 bg-emerald-400 text-white border border-emerald-400 rounded-md box-shadow dark:dark-box-shadow hover:bg-white hover:text-emerald-400 transition duration-700 ease-in-out"
+                >
+                  Contact Me
+                </button>
+                <button
+                  id="cm-button"
+                  class="w-36 h-9 bg-emerald-400 text-white border border-emerald-400 rounded-md box-shadow dark:dark-box-shadow hover:bg-white hover:text-emerald-400 transition duration-700 ease-in-out"
+                >
+                  Portfolio
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- EDUCATION & SKILLS -->
+          <div
+            class="items-center pt-10 md:pt-20 lg:pt-0 px-4 lg:px-12 bg-white dark:bg-slate-900 dark:text-slate-300"
+          >
+            <h1 class="text-4xl font-light">EDUCATION & SKILLS</h1>
+            <div class="lg:flex lg:space-x-8 py-10">
+              <div class="space-y-1">
+                <div
+                  class="bg-white dark:bg-slate-800 dark:text-slate-300 border border-slate-200 lg:w-96 p-3 rounded-md"
+                >
+                  <span
+                    class="px-2 text-slate-100 rounded-md text-sm bg-emerald-400"
+                    >2019-2021</span
+                  >
+                  <h6 class="font-mediumn my-2">Network Engineer</h6>
+                  <div class="font-thin mb-4">Spectrume Life Co.,Ltd</div>
+                </div>
+                <div
+                  class="bg-white dark:bg-slate-800 dark:text-slate-300 border border-slate-200 lg:w-96 p-3 rounded-md"
+                >
+                  <span
+                    class="px-2 text-slate-100 rounded-md text-sm bg-emerald-400"
+                    >2021-2021</span
+                  >
+                  <h6 class="font-mediumn my-2">Web Development Intern Ship</h6>
+                  <div class="font-thin mb-4">BIB</div>
+                </div>
+                <div
+                  class="bg-white dark:bg-slate-800 dark:text-slate-300 border border-slate-200 lg:w-96 p-3 rounded-md"
+                >
+                  <span
+                    class="px-2 text-slate-100 rounded-md text-sm bg-emerald-400"
+                    >2021-2023</span
+                  >
+                  <h6 class="font-mediumn my-2">Full Stack Developer</h6>
+                  <div class="font-thin mb-4">Meta Team Myanmar</div>
+                </div>
+              </div>
+
+              <div class="mt-5 md:mt-10 lg:mt-0">
+                <h1 class="font-medium text-2xl">My Skills</h1>
+                <p
+                  class="text-sm text-slate-600 dark:text-slate-300 my-5 lg:my-2"
+                >
+                  I'm a Freelancer Front-end Developer with over 3 years of
+                  experience. I code and create web elements for amazing people
+                  around the world. I like work with new people. New people new
+                  Experiences.
+                </p>
+                <div>
+                  <div class="mb-1">
+                    <p class="my-1 text-sm">HTML</p>
+                    <div
+                      class="w-full bg-gray-200 rounded-full dark:bg-slate-100"
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                        style="width: 90%"
+                      >
+                        90%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-1">
+                    <p class="my-1 text-sm">CSS</p>
+                    <div
+                      class="w-full bg-gray-200 rounded-full dark:bg-slate-100"
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                        style="width: 85%"
+                      >
+                        85%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-1">
+                    <p class="my-1 text-sm">Javascript</p>
+                    <div
+                      class="w-full bg-gray-200 rounded-full dark:bg-slate-100"
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                        style="width: 80%"
+                      >
+                        80%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-1">
+                    <p class="my-1 text-sm">PHP</p>
+                    <div
+                      class="w-full bg-gray-200 rounded-full dark:bg-slate-100"
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                        style="width: 85%"
+                      >
+                        85%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-1">
+                    <p class="my-1 text-sm">Laravel</p>
+                    <div
+                      class="w-full bg-gray-200 rounded-full dark:bg-slate-100"
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                        style="width: 80%"
+                      >
+                        80%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-1">
+                    <p class="my-1 text-sm">Vue.js</p>
+                    <div
+                      class="w-full bg-gray-200 rounded-full dark:bg-slate-100"
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                        style="width: 70%"
+                      >
+                        70%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-1">
+                    <p class="my-1 text-sm">React.js</p>
+                    <div
+                      class="w-full bg-gray-200 rounded-full dark:bg-slate-100"
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                        style="width: 70%"
+                      >
+                        70%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-1">
+                    <p class="my-1 text-sm">Alpine.js</p>
+                    <div
+                      class="w-full bg-gray-200 rounded-full dark:bg-slate-100"
+                    >
+                      <div
+                        class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                        style="width: 75%"
+                      >
+                        75%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- EXPERIENCE -->
+          <div
+            class="items-center px-4 lg:px-12 md:pt-16 bg-white dark:bg-slate-900 dark:text-slate-300"
+          >
+            <h1 class="text-4xl font-light">EXPERIENCE.</h1>
+            <div class="py-10">
+              <div class="mb-1">
+                <div
+                  class="space-y-1 border border-slate-200 dark:bg-slate-800 w-full p-3 rounded-md flex space-x-6"
+                >
+                  <div class="w-20 lg:w-40">
+                    <img src="/assets/img/a1.png" alt="A1" />
+                  </div>
+                  <div class="w-full">
+                    <div class="flex justify-between">
+                      <div>
+                        <h3 class="font-medium text-xl">Network Engineer</h3>
+                        <p class="text-sm">
+                          Spectrum Life | Full Time | Oct 2019 - Nov 2020
+                        </p>
+                      </div>
+                      <div
+                        class="px-2 text-slate-100 rounded-md text-sm bg-emerald-400 h-6 uppercase w-[100px] text-center"
+                      >
+                        Full Time
+                      </div>
+                    </div>
+                    <div class="font-thin my-4">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco slaboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-1">
+                <div
+                  class="space-y-1 border border-slate-200 dark:bg-slate-800 w-full p-3 rounded-md flex space-x-6"
+                >
+                  <div class="w-20 lg:w-40">
+                    <img src="/assets/img/a1.png" alt="A1" />
+                  </div>
+                  <div class="w-full">
+                    <div class="flex justify-between">
+                      <div>
+                        <h3 class="font-medium text-xl">
+                          Intern Ship Web Developer
+                        </h3>
+                        <p class="text-sm">
+                          BIB | Remote | Jan 2020- April 2020
+                        </p>
+                      </div>
+                      <div
+                        class="px-2 text-slate-100 rounded-md text-sm bg-emerald-400 h-6 uppercase w-[100px] text-center"
+                      >
+                        Full Time
+                      </div>
+                    </div>
+                    <div class="font-thin my-4">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco slaboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-1">
+                <div
+                  class="space-y-1 border border-slate-200 dark:bg-slate-800 w-full p-3 rounded-md flex space-x-6"
+                >
+                  <div class="w-20 lg:w-40">
+                    <img src="/assets/img/a1.png" alt="A1" />
+                  </div>
+                  <div class="w-full">
+                    <div class="flex justify-between">
+                      <div>
+                        <h3 class="font-medium text-xl">
+                          Full-Stack Web Developer
+                        </h3>
+                        <p class="text-sm">
+                          MTM | Full Time | Jan 2020- OCT 2023
+                        </p>
+                      </div>
+                      <div
+                        class="px-2 text-slate-100 rounded-md text-sm bg-emerald-400 h-6 uppercase w-[100px] text-center"
+                      >
+                        Full Time
+                      </div>
+                    </div>
+                    <div class="font-thin my-4">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco slaboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="my_project" class="section my_project pp-scrollable">
+          <!-- My Projects -->
+          <div
+            class="items-center px-4 lg:px-12 py-16 bg-white dark:bg-slate-900 dark:text-slate-300"
+          >
+            <h1 class="text-4xl font-light mb-6">My Projects.</h1>
+            <div class="mb-6 lg:mb-12">
+              <div
+                class="relative flex flex-col lg:flex-row w-full max-w-full lg:rounded-xl bg-white dark:bg-slate-800 dark:text-slate-300 bg-clip-border text-gray-700 border border-gray-200 shadow"
+              >
+                <div
+                  class="relative w-full lg:w-2/5 m-0 overflow-hidden text-gray-700 bg-white lg:rounded-r-none shrink-0 lg:rounded-xl bg-clip-border"
+                >
+                  <img
+                    src="/assets/img/project-planner.png"
+                    alt="image"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="p-6">
+                  <h6
+                    class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-emerald-400 uppercase"
+                  >
+                    startups
+                  </h6>
+                  <h4
+                    class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal dark:bg-slate-800 dark:text-slate-300"
+                  >
+                    Project Planner
+                  </h4>
+                  <p
+                    class="block mb-5 lg:mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 dark:text-slate-600"
+                  >
+                    Like so many organizations these days, Autodesk is a company
+                    in transition. It was until recently a traditional boxed
+                    software company selling licenses. Yet its own business
+                    model disruption is only part of the story
+                  </p>
+                  <a
+                    class="inline-block"
+                    href="https://github.com/ChanHeinKyaw/project-planner"
+                    target="_blank"
+                  >
+                    <button
+                      class="flex items-center gap-2 lg:px-6 lg:py-3 font-sans text-xs font-bold text-center text-emerald-400 uppercase align-middle transition-all rounded-lg select-none hover:bg-emerald-400/10 active:bg-emerald-400/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      View Soure Code
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="mb-6 lg:mb-12">
+              <div
+                class="relative flex flex-col lg:flex-row w-full max-w-full rounded-xl bg-white dark:bg-slate-800 dark:text-slate-300 bg-clip-border text-gray-700 border border-gray-200 shadow"
+              >
+                <div
+                  class="relative w-full lg:w-2/5 m-0 overflow-hidden text-gray-700 bg-white lg:rounded-r-none shrink-0 lg:rounded-xl bg-clip-border"
+                >
+                  <img
+                    src="/assets/img/react-journey.png"
+                    alt="image"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="p-6">
+                  <h6
+                    class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-emerald-400 uppercase"
+                  >
+                    startups
+                  </h6>
+                  <h4
+                    class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal dark:bg-slate-800 dark:text-slate-300"
+                  >
+                    React Journey
+                  </h4>
+                  <p
+                    class="block mb-5 lg:mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 dark:text-slate-600"
+                  >
+                    Like so many organizations these days, Autodesk is a company
+                    in transition. It was until recently a traditional boxed
+                    software company selling licenses. Yet its own business
+                    model disruption is only part of the story
+                  </p>
+                  <a
+                    class="inline-block"
+                    href="https://github.com/ChanHeinKyaw/react_journey_project"
+                    target="_blank"
+                  >
+                    <button
+                      class="flex items-center gap-2 lg:px-6 lg:py-3 font-sans text-xs font-bold text-center text-emerald-400 uppercase align-middle transition-all rounded-lg select-none hover:bg-emerald-400/10 active:bg-emerald-400/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      View Soure Code
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="mb-6 lg:mb-12">
+              <div
+                class="relative flex flex-col lg:flex-row w-full max-w-full rounded-xl bg-white dark:bg-slate-800 dark:text-slate-300 bg-clip-border text-gray-700 border border-gray-200 shadow"
+              >
+                <div
+                  class="relative w-full lg:w-2/5 m-0 overflow-hidden text-gray-700 bg-white lg:rounded-r-none shrink-0 lg:rounded-xl bg-clip-border"
+                >
+                  <img
+                    src="/assets/img/laravel-blog.png"
+                    alt="image"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="p-6">
+                  <h6
+                    class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-emerald-400 uppercase"
+                  >
+                    startups
+                  </h6>
+                  <h4
+                    class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal dark:bg-slate-800 dark:text-slate-300"
+                  >
+                    Laravel Blog
+                  </h4>
+                  <p
+                    class="block mb-5 lg:mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 dark:text-slate-600"
+                  >
+                    Like so many organizations these days, Autodesk is a company
+                    in transition. It was until recently a traditional boxed
+                    software company selling licenses. Yet its own business
+                    model disruption is only part of the story
+                  </p>
+                  <a
+                    class="inline-block"
+                    href="https://github.com/ChanHeinKyaw/Laravel"
+                    target="_blank"
+                  >
+                    <button
+                      class="flex items-center gap-2 lg:px-6 lg:py-3 font-sans text-xs font-bold text-center text-emerald-400 uppercase align-middle transition-all rounded-lg select-none hover:bg-emerald-400/10 active:bg-emerald-400/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      View Soure Code
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="mb-6 lg:mb-12">
+              <div
+                class="relative flex flex-col lg:flex-row w-full max-w-full rounded-xl bg-white dark:bg-slate-800 dark:text-slate-300 bg-clip-border text-gray-700 border border-gray-200 shadow"
+              >
+                <div
+                  class="relative w-full lg:w-2/5 m-0 overflow-hidden text-gray-700 bg-white lg:rounded-r-none shrink-0 lg:rounded-xl bg-clip-border"
+                >
+                  <img
+                    src="/assets/img/nuxt-shop.png"
+                    alt="image"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="p-6">
+                  <h6
+                    class="block mb-4 font-sans text-base antialiased font-semibold leading-relaxed tracking-normal text-emerald-400 uppercase"
+                  >
+                    startups
+                  </h6>
+                  <h4
+                    class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal dark:bg-slate-800 dark:text-slate-300"
+                  >
+                    Nuxt JS Shopping
+                  </h4>
+                  <p
+                    class="block mb-5 lg:mb-8 font-sans text-base antialiased font-normal leading-relaxed text-gray-700 dark:text-slate-600"
+                  >
+                    Like so many organizations these days, Autodesk is a company
+                    in transition. It was until recently a traditional boxed
+                    software company selling licenses. Yet its own business
+                    model disruption is only part of the story
+                  </p>
+                  <a
+                    class="inline-block"
+                    href="https://github.com/ChanHeinKyaw/lufy-nuxt-shop"
+                    target="_blank"
+                  >
+                    <button
+                      class="flex items-center gap-2 lg:px-6 lg:py-3 font-sans text-xs font-bold text-center text-emerald-400 uppercase align-middle transition-all rounded-lg select-none hover:bg-emerald-400/10 active:bg-emerald-400/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      View Soure Code
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="w-4 h-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                      </svg>
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact_me" class="section contact_me pp-scrollable">
+          <!-- Get In Touch -->
+          <div
+            class="items-center px-4 lg:px-12 my-16 bg-white dark:bg-slate-900 dark:text-slate-300"
+          >
+            <h1 class="text-4xl font-light mb-6">Get In Touch.</h1>
+            <div class="flex flex-col lg:flex-row lg:space-x-5">
+              <div
+                class="lg:w-[30rem] p-3 rounded border border-gray-200 shadow mb-10 lg:mb-20 dark:bg-slate-800"
+              >
+                <div class="font-medium text-xl mb-2">
+                  What’s your story?
+                  <div>Get in touch</div>
+                </div>
+                <p class="mb-4 text-gray-500">
+                  Always available for freelancing if the right project comes
+                  along, Feel free to contact me.
+                </p>
+                <div class="flex mb-3 dark:text-slate-300">
+                  <i class="fas fa-map-marked mr-2 text-xs"></i>
+                  <p class="text-sm text-gray-500 dark:text-slate-300">
+                    No(1A/3), Mya, Thida Housing, Yangon
+                  </p>
+                </div>
+                <div class="flex mb-3 items-center dark:text-slate-300">
+                  <i class="fas fa-envelope mr-2 text-xs"></i>
+                  <p class="text-sm text-gray-500 dark:text-slate-300">
+                    chanheinkyaw.mm@gmail.com
+                  </p>
+                </div>
+                <div class="flex mb-3 items-center dark:text-slate-300">
+                  <i class="fas fa-phone mr-2 text-xs"></i>
+                  <p class="text-sm text-gray-500 dark:text-slate-300">
+                    09740858348
+                  </p>
+                </div>
+              </div>
+              <div
+                class="w-full p-3 rounded border border-gray-200 shadow dark:bg-slate-800"
+              >
+                <h6 class="font-medium text-xl mb-2">Say Something</h6>
+                <form>
+                  <div class="flex space-x-5 mb-4">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="dark:bg-slate-900 dark:border-slate-300 border border-gray-200 focus:outline-emerald-400 w-[50%] p-2 text-xs"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="dark:bg-slate-900 dark:border-slate-300 border border-gray-200 focus:outline-emerald-400 w-[50%] p-2 text-xs"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    class="dark:bg-slate-900 dark:border-slate-300 border border-gray-200 focus:outline-emerald-400 w-full p-2 text-xs mb-4"
+                  />
+                  <textarea
+                    rows="8"
+                    class="dark:bg-slate-900 dark:border-slate-300 border border-gray-200 focus:outline-emerald-400 w-full p-2 text-xs mb-4"
+                    placeholder="Your Messsage"
+                  ></textarea>
+                  <button
+                    id="cm-button"
+                    class="w-36 h-9 bg-emerald-400 text-white border border-emerald-400 rounded-md box-shadow dark:dark-box-shadow hover:bg-white hover:text-emerald-400 transition duration-700 ease-in-out"
+                  >
+                    send message
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="h-70 lg:h-80 my-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1605.500964125788!2d96.1983760012099!3d16.848847269514305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDUwJzU2LjAiTiA5NsKwMTEnNTQuMyJF!5e0!3m2!1sen!2smm!4v1700294111686!5m2!1sen!2smm"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/pagepiling-js-version-kostyast/dist/jquery.pagepiling.min.js"></script>
+    <script src="/node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      let menu = document.getElementById("menu");
+      let showMenu = document.getElementById("showMenu");
+      let hideMenu = document.getElementById("hideMenu");
+
+      showMenu.addEventListener("click", function () {
+        menu.style.left = "0px";
+      });
+
+      hideMenu.addEventListener("click", function () {
+        menu.style.left = "-100%";
+      });
+
+      ScrollReveal({
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+        interval: 600,
+        reset: true,
+      }).reveal(".headline", {
+        interval: 200,
+      });
+
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          menu: "#myMenu",
+          verticalCentered: true,
+          sectionsColor: [],
+          anchors: ["home", "about_me", "my_project", "contact_me"],
+          scrollingSpeed: 700,
+          easing: "swing",
+          loopBottom: false,
+          loopTop: false,
+          css3: true,
+          navigation: {
+            textColor: "#34D399",
+            bulletsColor: "#34D399",
+            position: "right",
+            tooltips: ["home", "about_me", "my_project", "contact_me"],
+          },
+          normalScrollElements: null,
+          normalScrollElementTouchThreshold: 5,
+          touchSensitivity: 5,
+          keyboardScrolling: true,
+          sectionSelector: ".section",
+          animateAnchor: false,
+
+          //events
+          onLeave: function (index, nextIndex, direction) {},
+
+          afterLoad: function (anchorLink, index) {},
+          afterRender: function () {},
+        });
+      });
+
+      window.addEventListener("load", function () {
+        document.querySelector(".loading").style.display = "none";
+      });
+    </script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

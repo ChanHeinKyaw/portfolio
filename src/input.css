@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .box-shadow {
+    box-shadow: 4px 4px #212529 !important;
+  }
+
+  .dark-box-shadow {
+    box-shadow: 4px 4px #ffffff !important;
+  }
+
+  #cm-button:hover {
+    box-shadow: 4px 4px #34d399 !important;
+  }
+
+  #myMenu .active {
+    color: #69d499;
+  }
+
+  .pp-section {
+    width: 100% !important;
+  }
+}
